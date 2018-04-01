@@ -152,7 +152,6 @@ then
 clear
 echo -e $green" installing SPAM JD.ID
 sleep 1
-pkg update && pkg upgrade
 pkg install php
 pkg install curl
 curl https://pastebin.com/raw/9BYyJVc1 -o jdid.php
