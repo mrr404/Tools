@@ -150,7 +150,7 @@ fi
 if [ $act = 08 ] || [ $act = 08 ]
 then
 clear
-echo -e $green" installing SPAM JD.ID
+echo -e $green" installing SPAM JD.ID "
 sleep 1
 pkg install php
 pkg install curl
