@@ -148,6 +148,18 @@ fi
 
 if [ $act = 08 ] || [ $act = 08 ]
 then
+clear
+echo -e $green" installing SPAM JD.ID
+sleep 1
+pkg update && pkg upgrade
+pkg install php
+pkg install curl
+curl https://pastebin.com/raw/9BYyJVc1 -o jdid.php
+echo -e $green" selesai di install "
+fi
+
+if [ $act = 09 ] || [ $act = 09 ]
+then
 echo -e $red" jomblo "
 sleep 1
 echo -e $yellow" ITU "
