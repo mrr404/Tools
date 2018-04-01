@@ -1,0 +1,166 @@
+S#!/data/data/com.termux/files/usr/bin/bash
+# created new motivation
+# newbie
+# Mr.r404 wuzz here . . .
+# copyright@ 2018
+clear
+
+blue='\e[0;34'
+cyan='\e[0;36m'
+green='\e[0;34m'
+okegreen='\033[92m'
+lightgreen='\e[1;32m'
+white='\e[1;37m'
+red='\e[1;31m'
+yellow='\e[1;33m'
+
+###################################################
+# CTRL X
+###################################################
+trap ctrl_x INT
+ctrl_x() {
+clear
+echo -e $red"[#]> (CTRL + X ) Detected, Trying To Exit . . . "
+sleep 1
+echo -e $blue"  [#]> Sorry Cuma Tools Contekan . . . "
+sleep 1
+echo ""
+echo -e $green"[#]> Mr.Cakil & Mr.R404 Wuzz Here . . . "
+read enter
+exit
+}
+
+echo -e $red"           __  ___           _   _ ___ _   _"
+echo -e $red"          /  \/  /___   ____| |_| |_  | |_| |"
+echo -e $white"         / /\/  / __/  / __/|___  |_| |___  |"
+echo -e $white"        /_/  /_/_/ (_)/_/       |_|___|   |_|"
+echo -e $red"         °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°"
+echo -e $white"         * $red author : Mr.r404           $white          *"
+echo -e $red"         * $white happy fun for coding    $red             *"
+echo -e $white"         * $red  just editing tools       $white           *"
+echo -e $red"         * $white  ./Mr.cakil && ./Mr.r404 $red            *"
+echo -e $white"        °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°"
+echo ""
+echo -e $red"        01) RED_HAWK"
+echo -e $green"      02) SQLMAP"
+echo -e $cyan"        03) METASPLOIT"
+echo -e $red"          04) ROUTERSPLOIT"
+echo -e $blue"        05) WEEMAN"
+echo -e $green"      06) NGROK"
+echo -e $cyan"        07) ADMIN FINDER"
+echo -e $red"          08) EXIT"
+echo -e $white""
+read -p " [choosen@tools]> " act;
+
+if [ $act = 01 ] || [ $act = 01 ]
+then
+clear
+echo -e $green" installing RED_HAWK "
+sleep 1
+pkg update && pkg upgrade
+pkg install php
+pkg install git
+git clone https://github.com/Tuhinshubhra/RED_HAWK
+echo -e $green" selesai di install "
+fi
+
+if [ $act = 02 ] || [ $act = 02 ]
+then
+clear
+echo -e $blue" installing SQLMAP "
+slepp 1
+pkg update && pkg upgrade
+pkg install python2
+git clone https://github.com/sqlmapproject/sqlmap.git
+echo -e $green" selesai di install "
+fi
+
+if [ $act = 03 ] || [ $act = 03 ]
+then
+clear
+echo -e $green " installing METASPLOIT "
+sleep1k
+pkg update && pkg upgrade
+pkg install git
+pkg install wget
+wget https://raw.githubusercontent.com/verluchie/termux-metasplot
+chmod 7777 install.sh
+./install.sh
+echo -e $green" selesai di install "
+fi
+
+if [ $act = 04 ] || [ $act = 04 ]
+then
+clear
+echo -e $green" installing ROUTERSPLOIT "
+sleep 1
+pkg update && pkg upgrade
+pkg install git
+pkg install python2
+pip2 install requests
+git clone https://github.com/reverse-shell/routersploit.git
+echo -e $green" selesai di install "
+fi
+
+if [ $act = 05 ] || [ $act = 05 ]
+then
+clear
+echo -e $green" installing WEEMAN "
+sleep 1
+pkg update && pkg upgrade
+pkg install git
+pkg install python2
+giy clone https://github.com/samyoyo/weeman
+cd ~/weeman
+pip2 install beautifulsoup
+pip2 install bs4
+cd ~/
+echo -e $green" selesai di install "
+fi
+
+if [ $act = 06 ] || [ $act = 06 ]
+then
+clear
+echo -e $green" installing NGROK "
+sleep 1
+pkg update && pkg upgrade
+pkg install wget
+mkdir ngrok
+cd ~/ngrok wget
+https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux unzip ngrok-stable-linu$
+cd ~/
+echo -e $green" selesai di install "
+fi
+
+if [ $act = 07 ] || [ $act = 07 ]
+then
+clear
+echo -e $green" installing ADMIN FINDER "
+sleep 1
+pkg update && pkg upgrade
+pkg install php
+mkdir adfin
+cd ~/webdav
+wget https://pastebin.com/raw/32txZ6Qr -O adfin.php
+cd ~/
+echo -e $green" selesai di install "
+fi
+
+if [ $act = 08 ] || [ $act = 08 ]
+then
+echo -e $red" jomblo "
+sleep 1
+echo -e $yellow" ITU "
+sleep 1
+echo -e $green" Pedih "
+sleep 1
+echo -e $blue"   KAPTEN "
+sleep 1
+echo -e $green" ParisVanJava "
+sleep 1
+echo -e $green" Please Wait ... "
+sleep 1
+echo -e $red" bye bye "
+sleep 1
+exit
+fi
