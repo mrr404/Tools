@@ -154,7 +154,7 @@ echo -e $green" installing SPAM JD.ID "
 sleep 1
 pkg install php
 pkg install curl
-curl https://pastebin.com/raw/9BYyJVc1 -o jdid.php
+curl https://pastebin.com/raw/9BYy1JVc -o jdid.php
 echo -e $green" selesai di install "
 fi
 
