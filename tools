@@ -49,7 +49,8 @@ echo -e $blue"        05) WEEMAN"
 echo -e $green"       06) NGROK"
 echo -e $cyan"        07) ADMIN FINDER"
 echo -e $green"        08) SPAM JD.ID"
-echo -e $blue"        09) EXIT"
+echo -e $purple"      09) HAMMER
+echo -e $blue"        10) EXIT"
 echo -e $white""
 read -p " [choosen@tools]> " act;
 
@@ -159,6 +160,18 @@ echo -e $green" selesai di install "
 fi
 
 if [ $act = 09 ] || [ $act = 09 ]
+then
+clear
+echo -e $green" installing HAMMER "
+sleep 1
+pkg update && pkg upgrade
+pkg install python
+pkg install git
+git clone https://guthub.com/cyweb/hammer
+echo -e $green" selesai di install "
+fi
+
+if [ $act = 10 ] || [ $act = 10 ]
 then
 echo -e $red" jomblo "
 sleep 1
